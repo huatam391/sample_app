@@ -9,7 +9,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params # Not the final implementation!
     if @user.save
-      flash[:success] = t("controllers.users_controller.flash-message")
+      flash[:success] = t ".flash-message"
+      log_in @user
       redirect_to @user
     else
       render :new
@@ -19,10 +20,10 @@ class UsersController < ApplicationController
   private
 
   def load_user
-    @user = User.find_by(id: params[:id])
-      return unless @user.nil?
-      flash[:danger] = t("controllers.users_controller.usernotEX")
-      redirect_to root_path
+    @user = User.find_by id: params[:id]
+    return if @user
+    flash[:danger] = t ".usernotEX"
+    redirect_to root_path
   end
 
   def user_params
