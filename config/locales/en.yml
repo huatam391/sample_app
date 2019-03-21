@@ -30,6 +30,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  helper:
+    application:
+      base_title: "Ruby on Rails Tutorial Sample App"
   layouts:
     application:
       title: " | Ruby on Rails Tutorial Sample App"
