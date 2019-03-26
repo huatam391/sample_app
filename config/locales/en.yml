@@ -36,13 +36,28 @@ en:
   layouts:
     application:
       title: " | Ruby on Rails Tutorial Sample App"
+    header:
+      spa: "Sample app"
+      home: "Home"
+      help: "Help"
+      log: "Log in"
+    footer:
+      text1: "Ruby on Rails Tutorial"
+      the: "The "
+      name: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      news: "News"
+
   static_pages:
     home:
       home: "Home"
+      welcome: "Welcome to the Sample App"
       h1: "Sample App"
-      text1: "This is the home page for the"
+      text1: "This is the home page for the "
       link: "Ruby on Rails Tutorial"
       text2: "sample application."
+      signup: "Sign up now!"
     about:
       home: "About"
       link_1: "Ruby on Rails Tutorial"
@@ -65,3 +80,7 @@ en:
       contact: "Contact"
       p1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       link_1: "contact page"
+  users:
+    new:
+      signup: "Sign up"
+      text_1: "This will be a signup page for new users."
