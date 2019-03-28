@@ -5,3 +5,5 @@ email:
   maximum: 255
 pass:
   minimum: 6
+gravita:
+  size: 80
