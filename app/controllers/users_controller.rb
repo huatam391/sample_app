@@ -48,18 +48,32 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
 
-  private
-
-  def user_params
-    params.require(:user).permit :name, :email, :password,
-      :password_confirmation
+  def following
+    @title = "Following"
+    @users = @user.following.paginate page: params[:page],
+      per_page: Settings.perpage
+    render "show_follow"
   end
+
+  def followers
+    @title = "Followers"
+    @users = @user.followers.paginate page: params[:page],
+      per_page: Settings.perpage
+    render "show_follow"
+  end
+
+  private
 
   def load_user
     @user = User.find_by id: params[:id]
     return if @user
     flash[:danger] = t ".not_found"
     redirect_to root_path
+  end
+
+  def user_params
+    params.require(:user).permit :name, :email, :password,
+      :password_confirmation
   end
 
   def logged_in_user

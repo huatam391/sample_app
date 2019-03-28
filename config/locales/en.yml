@@ -1,6 +1,7 @@
 en:
   shared:
     user_info:
+      view: "view my profile"
       micropost:
         one: "micropost"
         other: "microposts"
@@ -157,3 +158,8 @@ en:
   controllers:
     application:
       login: "Please log in."
+
+  controllers:
+    relationships:
+      not_exist: "User not exist"
+      not_followed: "this user not found in your following users."

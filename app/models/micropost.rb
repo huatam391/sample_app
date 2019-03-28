@@ -6,8 +6,11 @@ class Micropost < ApplicationRecord
   validates :content, presence: true,
     length: {maximum: Settings.content.maximum}
   validate :picture_size
-  scope :where_id, ->(id){where "user_id = ?", id}
-
+  scope :find_user_followed, (lambda do |id|
+    following_ids = "SELECT followed_id FROM relationships
+      WHERE  follower_id = :user_id"
+    where("user_id IN (#{following_ids}) OR user_id = :user_id", user_id: id)
+  end)
   private
 
   # Validates the size of an uploaded picture.
