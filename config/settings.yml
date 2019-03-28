@@ -10,3 +10,10 @@ gravita:
 perpage: 20
 one: "1"
 two: 2
+content:
+  maximum: 140
+microposts:
+  user: 50
+  size: 5
+current_user: 50
+image_file_end: "image/jpeg,image/gif,image/png"
