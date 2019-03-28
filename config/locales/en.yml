@@ -8,6 +8,7 @@ en:
   helper:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
+
   layouts:
     application:
       title: " | Ruby on Rails Tutorial Sample App"
@@ -51,13 +52,13 @@ en:
       link_1: "Rails Tutorial help page"
       link_2: "Ruby on Rails Tutorial"
       paragraph_1: "Get help on the Ruby on Rails Tutorial at the"
-      paragraph_2: ".
-      To get help on this sample app, see the"
+      paragraph_2: ".To get help on this sample app, see the"
       paragraph_3: " book"
     contact:
       contact: "Contact"
       p1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       link_1: "contact page"
+
   users:
     user:
       delete: "Delete"
@@ -66,6 +67,8 @@ en:
       not_found: "Cant not found"
     create:
       welcome: "Welcome to the Sample App!"
+    create:
+      info: "Please check your email to activate your account."
     update:
       update: "Profile updated"
     destroy:
@@ -87,7 +90,9 @@ en:
       password: "Password"
     new:
       signup: "Sign up"
+      text_1: "This will be a signup page for new users."
       createacc: "Create my account"
+
   sessions:
     new:
       email: "Email"
@@ -96,5 +101,20 @@ en:
       text: "New user? "
       signup: "Sign up now!"
     create:
-      mess: "Invalid email/password combination"
-      remember_me: "1"
+      mess: "Account not activated. Check your email for the activation link."
+      invalid: "Invalid email/password combination"
+
+  account_activations:
+    edit:
+      success: "Account activated!"
+      danger: "Invalid activation link"
+
+  user_mailer:
+    account_activation:
+      activation: "Account activation"
+      sample: "Sample App"
+      text: "Welcome to the Sample App! Click on the link below to activate your account:"
+      link: "Activate"
+    password_reset:
+      greeting: "Hi"
+      mail: "to@example.org"
