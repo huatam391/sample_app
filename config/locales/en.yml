@@ -30,6 +30,16 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  shared:
+    error_messages:
+      text: "The form contains "
+      error:
+        one: "1 error"
+        other: "%{count} errors"
+  controllers:
+    users_controller:
+      flash-message: "Welcome to the Sample App!"
+      usernotEX: "User not exist. Do you want create one new"
   helper:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
@@ -84,3 +94,8 @@ en:
     new:
       signup: "Sign up"
       text_1: "This will be a signup page for new users."
+      confir: "Confirmation"
+      createacc: "Create my account"
+      name: "Name"
+      email: "Email"
+      password: "Password"
