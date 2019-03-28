@@ -27,7 +27,6 @@ en:
       about: "About"
       contact: "Contact"
       news: "News"
-
   static_pages:
     home:
       home: "Home"
@@ -60,18 +59,35 @@ en:
       p1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       link_1: "contact page"
   users:
-    create:
-      flash-message: "Welcome to the Sample App!"
+    user:
+      delete: "Delete"
+      sure: "You sure?"
     load_user:
-      usernotEX: "User not exist. Do you want create one new"
-    new:
-      signup: "Sign up"
-      text_1: "This will be a signup page for new users."
+      not_found: "Cant not found"
+    create:
+      welcome: "Welcome to the Sample App!"
+    update:
+      update: "Profile updated"
+    destroy:
+      delete: "User deleted"
+      danger_delete: "Can not delete!"
+    logged_in_user:
+      pl_login: "Please log in."
+    index:
+      all: "All users"
+    edit:
+      edit: "Edit user"
+      save: "Save change"
+      change: "change"
+      update: "Update your profile"
+    form:
       confir: "Confirmation"
-      createacc: "Create my account"
       name: "Name"
       email: "Email"
       password: "Password"
+    new:
+      signup: "Sign up"
+      createacc: "Create my account"
   sessions:
     new:
       email: "Email"

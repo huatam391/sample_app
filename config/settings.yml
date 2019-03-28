@@ -7,3 +7,4 @@ pass:
   minimum: 6
 gravita:
   size: 80
+perpage: 20
