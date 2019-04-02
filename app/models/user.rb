@@ -6,7 +6,8 @@ class User < ApplicationRecord
   validates :email, presence: true, length: {maximum: Settings.email.maximum},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
   has_secure_password
-  validates :password, presence: true, length: {minimum: Settings.pass.minimum}
+  validates :password, presence: true, length: {minimum: Settings.pass.minimum},
+    allow_nil: true
 
   # Returns the hash digest of the given string.
   def self.digest string
