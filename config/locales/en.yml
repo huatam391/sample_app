@@ -95,6 +95,7 @@ en:
 
   sessions:
     new:
+      forgot_password: "(forgot password)"
       email: "Email"
       password: "Password"
       login: "Log in"
@@ -110,11 +111,27 @@ en:
       danger: "Invalid activation link"
 
   user_mailer:
+    password_reset:
+      passreset: "Password reset"
     account_activation:
       activation: "Account activation"
       sample: "Sample App"
       text: "Welcome to the Sample App! Click on the link below to activate your account:"
       link: "Activate"
-    password_reset:
-      greeting: "Hi"
-      mail: "to@example.org"
+  password_resets:
+    update:
+      no_empty: "can't be empty"
+      done_reset: "Password has been reset."
+    load_user:
+      not_found: "The user was not found"
+      expired: "Password reset has expired."
+    create:
+      info: "Email sent with password reset instructions"
+      danger: "Email address not found"
+    edit:
+      rp: "Reset password"
+      confirm: "Confirmation"
+    new:
+      forgot: "Forgot password"
+
+
