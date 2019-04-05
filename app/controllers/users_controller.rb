@@ -1,10 +1,13 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, except: %i(new create show)
+  before_action :logged_in_user, except: %i(show create new)
   before_action :load_user, except: %i(index new create)
   before_action :correct_user, only: %i(edit update)
   before_action :is_admin?, only: :destroy
 
-  def show; end
+  def show
+    @microposts = @user.microposts.order_desc.paginate page: params[:page],
+      per_page: Settings.perpage
+  end
 
   def new
     @user = User.new
@@ -38,9 +41,9 @@ class UsersController < ApplicationController
 
   def destroy
     if @user.destroy
-      flash[:success] = t ".delete"
+      flash[:success] = t "flash_success"
     else
-      flash[:danger] = t ".danger_delete"
+      flash[:danger] = t "flash_danger"
     end
     redirect_to users_path
   end

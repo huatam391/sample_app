@@ -1,5 +1,9 @@
 en:
   shared:
+    user_info:
+      micropost:
+        one: "micropost"
+        other: "microposts"
     error_messages:
       text: "The form contains "
       error:
@@ -72,8 +76,8 @@ en:
     update:
       update: "Profile updated"
     destroy:
-      delete: "User deleted"
-      danger_delete: "Can not delete!"
+      flash_success: "User deleted"
+      flash_danger: "Cant delete!"
     logged_in_user:
       pl_login: "Please log in."
     index:
@@ -131,7 +135,25 @@ en:
     edit:
       rp: "Reset password"
       confirm: "Confirmation"
+      update: "Update password"
     new:
       forgot: "Forgot password"
+      submit: "Submit"
 
+  microposts:
+    picture_size:
+      picture: "should be less than 5MB"
+    micropost:
+      dl: "delete"
+      sure: "You sure?"
+    create:
+      created: "Micropost created!"
+    destroy:
+      deleted: "Micropost deleted"
+      fail: "Deleted fail"
+    correct_user:
+      not_found: "The user not found"
 
+  controllers:
+    application:
+      login: "Please log in."
