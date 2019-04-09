@@ -10,6 +10,7 @@ gravita:
 perpage: 20
 one: "1"
 two: 2
+perpage: 20
 content:
   maximum: 140
 microposts:

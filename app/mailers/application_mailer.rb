@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "noreply@example.com"
+  default from: "testrails.sunasterisk@gmail.com"
   layout "mailer"
 end
